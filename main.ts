@@ -10,16 +10,7 @@ while (true) {
         }
         
         player.onChat(passCode, function OpenDoor() {
-            let placePos: Position;
-            placePos = world(0, -62, 0)
-            player.say("OpenDoor!! It closes after three seconds...")
-            blocks.place(REDSTONE_TORCH, placePos)
-            for (let i = 3; i > 0; i += -1) {
-                player.say(i)
-                loops.pause(1000)
-            }
-            blocks.place(AIR, placePos)
-            player.say("CloseDoor......")
+            passcode.OpenDoor()
         })
     } else {
         enterAreaFlag = true

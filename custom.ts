@@ -20,7 +20,7 @@ namespace passcode {
      * TODO: ドアを開ける処理
      */
     //% block
-    export function OpenDoor() {
+    export function OpenDoor(){
         let placePos: Position;
         placePos = world(0, -62, 0)
         player.say("OpenDoor!! It closes after three seconds...")
